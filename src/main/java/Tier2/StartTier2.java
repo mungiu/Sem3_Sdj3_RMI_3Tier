@@ -10,7 +10,7 @@ public class StartTier2 {
 		 * Instantiate Skeleton here
  		 */
 		try {
-//			Registry reg = LocateRegistry.createRegistry(0);
+			Registry reg = LocateRegistry.createRegistry(0);
 			
 			Tier2Controller controllerTier2 = new Tier2Controller();
 		} catch (RemoteException e) {
