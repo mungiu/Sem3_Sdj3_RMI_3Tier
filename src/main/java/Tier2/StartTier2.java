@@ -1,6 +1,8 @@
 package Tier2;
 
 import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
 
 public class StartTier2 {
 	public static void main(String[] args) {
@@ -8,7 +10,9 @@ public class StartTier2 {
 		 * Instantiate Skeleton here
  		 */
 		try {
-			ControllerTier2 controllerTier2 = new ControllerTier2();
+//			Registry reg = LocateRegistry.createRegistry(0);
+			
+			Tier2Controller controllerTier2 = new Tier2Controller();
 		} catch (RemoteException e) {
 			e.printStackTrace();
 		}
