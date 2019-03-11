@@ -11,8 +11,7 @@ public class StartTier2 {
  		 */
 		try {
 			Registry reg = LocateRegistry.createRegistry(0);
-			
-			Tier2Controller controllerTier2 = new Tier2Controller();
+			ControllerTier2 controllerTier2 = new ControllerTier2();
 		} catch (RemoteException e) {
 			e.printStackTrace();
 		}
